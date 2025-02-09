@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*cabeçalho*/
+header, a {
+    background-color:rgb(58, 151, 104) ;
+    color: #fff;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+header h1 {
+    font-size: 35px;
+    font-style: italic;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 16px;
+    font-style: italic;
+}
+
+/*sobre a loja*/
+.sobre {
+    display: flex;
+    padding: 32px;
+}
+
+.sobre img {
+    margin-right: 32px;
+}
+
+h2 {
+    margin-bottom: 32px;
+    padding: 8px;
+    color: green;
+    border-bottom: 2px solid green;
+    font-style: italic;
+}
+
+/*produtos*/
+main {
+    padding: 0 32px;
+}
+
+.produtos li {
+    font-size: 20px;
+    list-style: none;
+}
+
+.produtos, img, h3, p, button {
+    margin-bottom: 16px;
+}
+
+.produtos button {
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.produtos ul {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 3%;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+/*tablet*/
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre {
+        display: block;
+        padding: 32px;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 3%;
+    }
+}
+
+/*celular*/
+@media screen and (max-width: 640px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre {
+        display: block;
+        padding: 32px;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        row-gap: 3%;
+    }
+}
