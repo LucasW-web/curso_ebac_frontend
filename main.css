@@ -1,0 +1,26 @@
+*{
+    padding:0;
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+body{
+    background-color:bisque;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+body h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+body h2{
+    padding-top: 20px;
+}
