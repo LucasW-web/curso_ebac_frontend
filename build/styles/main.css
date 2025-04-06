@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+body {
+  background-color: #ff793f;
+  color: #111217;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+.container h2 {
+  font-size: xx-large;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+header {
+  background-color: #cd6133;
+  padding: 20px 0;
+  font-size: large;
+}
+header img {
+  width: 90px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+header nav {
+  margin-top: 20px;
+}
+header nav .menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+header nav .menu a {
+  color: #111217;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav .menu a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 40px 0;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+section .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+section .products .product-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+  align-items: baseline;
+}
+section .products .product-item img {
+  width: 100%;
+  height: auto;
+}
+section .products .product-item h4 {
+  margin: 20px 0 10px;
+  margin-bottom: 16px;
+}
+section .products .product-item p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+section .products .product-item .product-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #cd6133;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+section .products .product-item .product-button:hover {
+  background-color: #ff793f;
+}
+footer {
+  background-color: #ff793f;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .footer-container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+footer .footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer-logos .footer-logo {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s;
+}
+footer .footer-logos .footer-logo:hover {
+  transform: scale(1.1);
+}

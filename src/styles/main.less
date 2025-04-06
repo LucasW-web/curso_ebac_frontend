@@ -1,0 +1,158 @@
+@import "mapas.less";
+
+
+@breakPointMobile: ~"(max-width: 767px)";
+@breakPointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #colors[@corDeFundo];
+    color: #colors[@textColor];
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+
+    h2{
+        font-size: xx-large;
+    }
+
+    @media @breakPointTablet {
+        max-width: 80%;
+    }
+
+    @media @breakPointMobile {
+        max-width: 70%;
+    }
+}
+
+header {
+    background-color: #colors[@headerColor];
+    padding: 20px 0;
+    font-size:large;
+
+    img {
+        width: 90px;
+        height: 70px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin-top: 20px;
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            a {
+                color: #colors [@textColor];
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 40px 0;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+        .product-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            align-items: baseline;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h4 {
+                margin: 20px 0 10px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                padding: 0 20px;
+                margin-bottom: 20px;
+            }
+
+            .product-button {
+                display: inline-block;
+                margin-bottom: 20px;
+                padding: 10px 20px;
+                background-color: #colors[@buttonColor];
+                color: #fff;
+                text-decoration: none;
+                border-radius: 30px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #colors[@buttonColorHover];
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #colors [@corDeFundo];
+    padding: 20px 0;
+    text-align: center;
+
+    .footer-container {
+        max-width: 1024px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .footer-logo {
+            width: 40px;
+            height: auto;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
